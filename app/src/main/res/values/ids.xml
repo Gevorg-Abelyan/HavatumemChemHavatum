@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="card_top_3" type="id" />
+    <item name="card_top_2" type="id" />
+    <item name="card_top_1" type="id" />
+    <item name="top_cards" type="id" />
+    <item name="step_change" type="id" />
+    <item name="show" type="id" />
+    <item name="card_top_4" type="id" />
+    <item name="card_top_5" type="id" />
+    <item name="card_top_6" type="id" />
+    <item name="card_top_7" type="id" />
+    <item name="card_top_8" type="id" />
+    <item name="card_top_9" type="id" />
+    <item name="bottom_cards" type="id" />
+    <item name="card_bottom_1" type="id" />
+    <item name="card_bottom_2" type="id" />
+    <item name="card_bottom_3" type="id" />
+    <item name="card_bottom_4" type="id" />
+    <item name="card_bottom_5" type="id" />
+    <item name="card_bottom_6" type="id" />
+    <item name="card_bottom_7" type="id" />
+    <item name="card_bottom_8" type="id" />
+    <item name="card_bottom_9" type="id" />
+</resources>
