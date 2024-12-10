@@ -22,4 +22,7 @@
     <item name="card_bottom_7" type="id" />
     <item name="card_bottom_8" type="id" />
     <item name="card_bottom_9" type="id" />
+    <item name="cards_top_1" type="id" />
+    <item name="cards_top_2" type="id" />
+    <item name="cards_top_3" type="id" />
 </resources>
