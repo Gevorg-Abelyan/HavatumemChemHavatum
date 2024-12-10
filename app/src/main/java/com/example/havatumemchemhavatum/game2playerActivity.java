@@ -17,6 +17,7 @@ public class game2playerActivity extends AppCompatActivity {
     int move = 1;
     boolean player1cardsvisibility = false;
     boolean player2cardsvisibility = false;
+    boolean chose = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,24 @@ public class game2playerActivity extends AppCompatActivity {
         TextView player2card9 = findViewById(R.id.card_bottom_9);
         RelativeLayout player1cards = findViewById(R.id.top_cards);
         RelativeLayout player2cards = findViewById(R.id.bottom_cards);
+        RelativeLayout player1cards1 = findViewById(R.id.cards_top_1);
+        RelativeLayout player1cards2 = findViewById(R.id.cards_top_2);
+        RelativeLayout player1cards3 = findViewById(R.id.cards_top_3);
+        RelativeLayout player1cards4 = findViewById(R.id.cards_top_4);
+        RelativeLayout player1cards5 = findViewById(R.id.cards_top_5);
+        RelativeLayout player1cards6 = findViewById(R.id.cards_top_6);
+        RelativeLayout player1cards7 = findViewById(R.id.cards_top_7);
+        RelativeLayout player1cards8 = findViewById(R.id.cards_top_8);
+        RelativeLayout player1cards9 = findViewById(R.id.cards_top_9);
+        RelativeLayout player2cards1 = findViewById(R.id.cards_bottom_1);
+        RelativeLayout player2cards2 = findViewById(R.id.cards_bottom_2);
+        RelativeLayout player2cards3 = findViewById(R.id.cards_bottom_3);
+        RelativeLayout player2cards4 = findViewById(R.id.cards_bottom_4);
+        RelativeLayout player2cards5 = findViewById(R.id.cards_bottom_5);
+        RelativeLayout player2cards6 = findViewById(R.id.cards_bottom_6);
+        RelativeLayout player2cards7 = findViewById(R.id.cards_bottom_7);
+        RelativeLayout player2cards8 = findViewById(R.id.cards_bottom_8);
+        RelativeLayout player2cards9 = findViewById(R.id.cards_bottom_9);
 
 
         show.setOnClickListener(new View.OnClickListener() {
@@ -147,6 +166,294 @@ public class game2playerActivity extends AppCompatActivity {
                 deal.setVisibility(View.INVISIBLE);
 
                 Toast.makeText(game2playerActivity.this, "Cards have been dealt!", Toast.LENGTH_SHORT).show();
+            }
+        });
+        player1cards1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards1.getLayoutParams();
+                    params.topMargin = 1000;
+                    player1cards1.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards1.getLayoutParams();
+                    params.topMargin = 1375;
+                    player1cards1.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player1cards2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards2.getLayoutParams();
+                    params.topMargin = 1000;
+                    player1cards2.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards2.getLayoutParams();
+                    params.topMargin = 1375;
+                    player1cards2.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player1cards3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards3.getLayoutParams();
+                    params.topMargin = 1000;
+                    player1cards3.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards3.getLayoutParams();
+                    params.topMargin = 1375;
+                    player1cards3.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player1cards4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards4.getLayoutParams();
+                    params.topMargin = 1000;
+                    player1cards4.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards4.getLayoutParams();
+                    params.topMargin = 1375;
+                    player1cards4.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player1cards5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards5.getLayoutParams();
+                    params.topMargin = 1000;
+                    player1cards5.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards5.getLayoutParams();
+                    params.topMargin = 1375;
+                    player1cards5.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player1cards6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards6.getLayoutParams();
+                    params.topMargin = 1000;
+                    player1cards6.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards6.getLayoutParams();
+                    params.topMargin = 1375;
+                    player1cards6.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player1cards7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards7.getLayoutParams();
+                    params.topMargin = 1000;
+                    player1cards7.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards7.getLayoutParams();
+                    params.topMargin = 1375;
+                    player1cards7.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player1cards8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards8.getLayoutParams();
+                    params.topMargin = 1000;
+                    player1cards8.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards8.getLayoutParams();
+                    params.topMargin = 1375;
+                    player1cards8.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player1cards9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards9.getLayoutParams();
+                    params.topMargin = 1000;
+                    player1cards9.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player1cards9.getLayoutParams();
+                    params.topMargin = 1375;
+                    player1cards9.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player2cards1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards1.getLayoutParams();
+                    params.topMargin = 1000;
+                    player2cards1.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards1.getLayoutParams();
+                    params.topMargin = 1375;
+                    player2cards1.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player2cards2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards2.getLayoutParams();
+                    params.topMargin = 1000;
+                    player2cards2.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards2.getLayoutParams();
+                    params.topMargin = 1375;
+                    player2cards2.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player2cards3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards3.getLayoutParams();
+                    params.topMargin = 1000;
+                    player2cards3.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards3.getLayoutParams();
+                    params.topMargin = 1375;
+                    player2cards3.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player2cards4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards4.getLayoutParams();
+                    params.topMargin = 1000;
+                    player2cards4.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards4.getLayoutParams();
+                    params.topMargin = 1375;
+                    player2cards4.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player2cards5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards5.getLayoutParams();
+                    params.topMargin = 1000;
+                    player2cards5.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards5.getLayoutParams();
+                    params.topMargin = 1375;
+                    player2cards5.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player2cards6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards6.getLayoutParams();
+                    params.topMargin = 1000;
+                    player2cards6.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards6.getLayoutParams();
+                    params.topMargin = 1375;
+                    player2cards6.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player2cards7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards7.getLayoutParams();
+                    params.topMargin = 1000;
+                    player2cards7.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards7.getLayoutParams();
+                    params.topMargin = 1375;
+                    player2cards7.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player2cards8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards8.getLayoutParams();
+                    params.topMargin = 1000;
+                    player2cards8.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards8.getLayoutParams();
+                    params.topMargin = 1375;
+                    player2cards8.setLayoutParams(params);
+                    chose = false;
+                }
+            }
+        });
+        player2cards9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chose == false) {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards9.getLayoutParams();
+                    params.topMargin = 1000;
+                    player2cards9.setLayoutParams(params);
+                    chose = true;
+                }else {
+                    RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) player2cards9.getLayoutParams();
+                    params.topMargin = 1375;
+                    player2cards9.setLayoutParams(params);
+                    chose = false;
+                }
             }
         });
     }
