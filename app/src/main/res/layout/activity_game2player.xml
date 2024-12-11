@@ -4,227 +4,227 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
-    <Button
-        android:id="@+id/show"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Show"/>
+<Button
+    android:id="@+id/show"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:text="Show"/>
 
-    <Button
-        android:id="@+id/step_change"
-        android:layout_marginLeft="300dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Step Change"/>
+<Button
+android:id="@+id/step_change"
+android:layout_marginLeft="300dp"
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:text="Step Change"/>
 
-    <Button
-        android:id="@+id/deal"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="150dp"
-        android:text="Deal"/>
+<Button
+android:id="@+id/deal"
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_marginLeft="150dp"
+android:text="Deal"/>
     <!-- Top Section -->
-    <RelativeLayout
-    android:id="@+id/top_cards"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentBottom="true"
-    android:layout_marginBottom="20dp"
-    android:visibility="invisible"
-    android:padding="8dp">
+<RelativeLayout
+android:id="@+id/top_cards"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_alignParentBottom="true"
+android:layout_marginBottom="20dp"
+android:visibility="invisible"
+android:padding="8dp">
 
-    <!-- 9 Overlapping Cards -->
-    <RelativeLayout
-        android:id="@+id/cards_top_1"
-        android:layout_width="120dp"
-        android:layout_height="180dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/border"
-        android:elevation="4dp">
-        <TextView
-            android:id="@+id/card_top_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="J"
-            android:textSize="24sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:padding="8dp"
-            android:textColor="#000000"/>
-    </RelativeLayout>
+<!-- 9 Overlapping Cards -->
+<RelativeLayout
+    android:id="@+id/cards_top_1"
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="500dp"
+    android:background="@drawable/border"
+    android:elevation="4dp">
+    <TextView
+        android:id="@+id/card_top_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="8dp"
+        android:textColor="#000000"/>
+</RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/cards_top_2"
-        android:layout_width="120dp"
-        android:layout_height="180dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/border"
-        android:elevation="4dp">
-        <TextView
-            android:id="@+id/card_top_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="J"
-            android:textSize="24sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:padding="8dp"
-            android:textColor="#000000"/>
-    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/cards_top_2"
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="500dp"
+    android:background="@drawable/border"
+    android:elevation="4dp">
+    <TextView
+        android:id="@+id/card_top_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="8dp"
+        android:textColor="#000000"/>
+</RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/cards_top_3"
-        android:layout_width="120dp"
-        android:layout_height="180dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/border"
-        android:elevation="4dp">
-        <TextView
-            android:id="@+id/card_top_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="J"
-            android:textSize="24sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:padding="8dp"
-            android:textColor="#000000"/>
-    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/cards_top_3"
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_marginLeft="80dp"
+    android:layout_marginTop="500dp"
+    android:background="@drawable/border"
+    android:elevation="4dp">
+    <TextView
+        android:id="@+id/card_top_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="8dp"
+        android:textColor="#000000"/>
+</RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/cards_top_4"
-        android:layout_width="120dp"
-        android:layout_height="180dp"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/border"
-        android:elevation="4dp">
-        <TextView
-            android:id="@+id/card_top_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="J"
-            android:textSize="24sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:padding="8dp"
-            android:textColor="#000000"/>
-    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/cards_top_4"
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_marginLeft="120dp"
+    android:layout_marginTop="500dp"
+    android:background="@drawable/border"
+    android:elevation="4dp">
+    <TextView
+        android:id="@+id/card_top_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="8dp"
+        android:textColor="#000000"/>
+</RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/cards_top_5"
-        android:layout_width="120dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginLeft="160dp"
-        android:background="@drawable/border"
-        android:elevation="4dp">
-        <TextView
-            android:id="@+id/card_top_5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="J"
-            android:textSize="24sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:padding="8dp"
-            android:textColor="#000000"/>
-    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/cards_top_5"
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_marginTop="500dp"
+    android:layout_marginLeft="160dp"
+    android:background="@drawable/border"
+    android:elevation="4dp">
+    <TextView
+        android:id="@+id/card_top_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="8dp"
+        android:textColor="#000000"/>
+</RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/cards_top_6"
-        android:layout_width="120dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginLeft="200dp"
-        android:background="@drawable/border"
-        android:elevation="4dp">
-        <TextView
-            android:id="@+id/card_top_6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="J"
-            android:textSize="24sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:padding="8dp"
-            android:textColor="#000000"/>
-    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/cards_top_6"
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_marginTop="500dp"
+    android:layout_marginLeft="200dp"
+    android:background="@drawable/border"
+    android:elevation="4dp">
+    <TextView
+        android:id="@+id/card_top_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="8dp"
+        android:textColor="#000000"/>
+</RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/cards_top_7"
-        android:layout_width="120dp"
-        android:layout_height="180dp"
-        android:layout_marginLeft="240dp"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/border"
-        android:elevation="4dp">
-        <TextView
-            android:id="@+id/card_top_7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="J"
-            android:textSize="24sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:padding="8dp"
-            android:textColor="#000000"/>
-    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/cards_top_7"
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_marginLeft="240dp"
+    android:layout_marginTop="500dp"
+    android:background="@drawable/border"
+    android:elevation="4dp">
+    <TextView
+        android:id="@+id/card_top_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="8dp"
+        android:textColor="#000000"/>
+</RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/cards_top_8"
-        android:layout_width="120dp"
-        android:layout_height="180dp"
-        android:layout_marginLeft="280dp"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/border"
-        android:elevation="4dp">
-        <TextView
-            android:id="@+id/card_top_8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="J"
-            android:textSize="24sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:padding="8dp"
-            android:textColor="#000000"/>
-    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/cards_top_8"
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_marginLeft="280dp"
+    android:layout_marginTop="500dp"
+    android:background="@drawable/border"
+    android:elevation="4dp">
+    <TextView
+        android:id="@+id/card_top_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="8dp"
+        android:textColor="#000000"/>
+</RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/cards_top_9"
-        android:layout_width="120dp"
-        android:layout_height="180dp"
-        android:layout_marginLeft="320dp"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/border"
-        android:elevation="4dp">
-        <TextView
-            android:id="@+id/card_top_9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="J"
-            android:textSize="24sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:padding="8dp"
-            android:textColor="#000000"/>
-    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/cards_top_9"
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_marginLeft="320dp"
+    android:layout_marginTop="500dp"
+    android:background="@drawable/border"
+    android:elevation="4dp">
+    <TextView
+        android:id="@+id/card_top_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="8dp"
+        android:textColor="#000000"/>
+</RelativeLayout>
 
 </RelativeLayout>
 
     <!-- Bottom Section -->
 <RelativeLayout
-    android:id="@+id/bottom_cards"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentBottom="true"
-    android:layout_marginBottom="20dp"
-    android:visibility="invisible"
-    android:padding="8dp">
+android:id="@+id/bottom_cards"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_alignParentBottom="true"
+android:layout_marginBottom="20dp"
+android:visibility="invisible"
+android:padding="8dp">
 
 <!-- 9 Overlapping Cards at Bottom (same structure as top section) -->
 <RelativeLayout
@@ -232,8 +232,8 @@
     android:layout_width="120dp"
     android:layout_height="180dp"
     android:layout_marginLeft="0dp"
-    android:background="@drawable/border"
     android:layout_marginTop="500dp"
+    android:background="@drawable/border"
     android:elevation="4dp">
     <TextView
         android:id="@+id/card_bottom_1"
@@ -252,8 +252,8 @@
     android:layout_width="120dp"
     android:layout_height="180dp"
     android:layout_marginLeft="40dp"
-    android:background="@drawable/border"
     android:layout_marginTop="500dp"
+    android:background="@drawable/border"
     android:elevation="4dp">
     <TextView
         android:id="@+id/card_bottom_2"
@@ -272,8 +272,8 @@
     android:layout_width="120dp"
     android:layout_height="180dp"
     android:layout_marginLeft="80dp"
-    android:background="@drawable/border"
     android:layout_marginTop="500dp"
+    android:background="@drawable/border"
     android:elevation="4dp">
     <TextView
         android:id="@+id/card_bottom_3"
@@ -292,8 +292,8 @@
     android:layout_width="120dp"
     android:layout_height="180dp"
     android:layout_marginLeft="120dp"
-    android:background="@drawable/border"
     android:layout_marginTop="500dp"
+    android:background="@drawable/border"
     android:elevation="4dp">
     <TextView
         android:id="@+id/card_bottom_4"
@@ -313,8 +313,8 @@
     android:layout_width="120dp"
     android:layout_height="180dp"
     android:layout_marginLeft="160dp"
-    android:background="@drawable/border"
     android:layout_marginTop="500dp"
+    android:background="@drawable/border"
     android:elevation="4dp">
     <TextView
         android:id="@+id/card_bottom_5"
@@ -332,8 +332,8 @@
     android:layout_width="120dp"
     android:layout_height="180dp"
     android:layout_marginLeft="200dp"
-    android:background="@drawable/border"
     android:layout_marginTop="500dp"
+    android:background="@drawable/border"
     android:elevation="4dp">
     <TextView
         android:id="@+id/card_bottom_6"
@@ -351,8 +351,8 @@
     android:layout_width="120dp"
     android:layout_height="180dp"
     android:layout_marginLeft="240dp"
-    android:background="@drawable/border"
     android:layout_marginTop="500dp"
+    android:background="@drawable/border"
     android:elevation="4dp">
     <TextView
         android:id="@+id/card_bottom_7"
@@ -370,8 +370,8 @@
     android:layout_width="120dp"
     android:layout_height="180dp"
     android:layout_marginLeft="280dp"
-    android:background="@drawable/border"
     android:layout_marginTop="500dp"
+    android:background="@drawable/border"
     android:elevation="4dp">
     <TextView
         android:id="@+id/card_bottom_8"
@@ -389,8 +389,8 @@
     android:layout_width="120dp"
     android:layout_height="180dp"
     android:layout_marginLeft="320dp"
-    android:background="@drawable/border"
     android:layout_marginTop="500dp"
+    android:background="@drawable/border"
     android:elevation="4dp">
     <TextView
         android:id="@+id/card_bottom_9"
@@ -403,70 +403,215 @@
         android:padding="8dp"
         android:textColor="#000000"/>
 </RelativeLayout>
+</RelativeLayout>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
 
 
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <!-- Centered GridLayout -->
-        <GridLayout
-            android:id="@+id/drop_zone_container"
+<GridLayout
+    android:id="@+id/drop_zone_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="120dp"
+    android:layout_marginLeft="10dp"
+    android:columnCount="3"
+    android:rowCount="2"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:id="@+id/drop_zone_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFCCCB"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/card_placed_1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:columnCount="3"
-            android:rowCount="2"
-            android:padding="16dp">
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/card_said_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
 
-            <!-- Drop Zones -->
-            <FrameLayout
-                android:id="@+id/drop_zone_1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="#FFCCCB"
-                android:layout_margin="8dp" />
 
-            <FrameLayout
-                android:id="@+id/drop_zone_2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="#FFCCCB"
-                android:layout_margin="8dp" />
+    <FrameLayout
+        android:id="@+id/drop_zone_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFCCCB"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/card_placed_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/card_said_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
 
-            <FrameLayout
-                android:id="@+id/drop_zone_3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="#FFCCCB"
-                android:layout_margin="8dp" />
+    <FrameLayout
+        android:id="@+id/drop_zone_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFCCCB"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/card_placed_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/card_said_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
 
-            <FrameLayout
-                android:id="@+id/drop_zone_4"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="#FFCCCB"
-                android:layout_margin="8dp" />
+    <FrameLayout
+        android:id="@+id/drop_zone_4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFCCCB"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/card_placed_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/card_said_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
 
-            <FrameLayout
-                android:id="@+id/drop_zone_5"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="#FFCCCB"
-                android:layout_margin="8dp" />
+    <FrameLayout
+        android:id="@+id/drop_zone_5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFCCCB"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/card_placed_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/card_said_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
 
-            <FrameLayout
-                android:id="@+id/drop_zone_6"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="#FFCCCB"
-                android:layout_margin="8dp" />
-        </GridLayout>
+    <FrameLayout
+        android:id="@+id/drop_zone_6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFCCCB"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/card_placed_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/card_said_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
 
+    <FrameLayout
+        android:id="@+id/drop_zone_7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFCCCB"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/card_placed_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/card_said_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/drop_zone_8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFCCCB"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/card_placed_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/card_said_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/drop_zone_9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFCCCB"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/card_placed_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/card_said_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+</GridLayout>
+
+
+</RelativeLayout>
+<LinearLayout
+android:id="@+id/button_container"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_alignParentBottom="true"
+android:gravity="center"
+android:padding="8dp">
+
+<Button
+    android:id="@+id/valet"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="J" />
+
+<Button
+    android:id="@+id/dama"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Q" />
+
+<Button
+    android:id="@+id/karol"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="K" />
+
+<Button
+    android:id="@+id/tuz"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="A"/>
+<Button
+    android:id="@+id/drop"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="drop" />
+</LinearLayout>
     </RelativeLayout>
-
-
-</RelativeLayout>
-</RelativeLayout>
