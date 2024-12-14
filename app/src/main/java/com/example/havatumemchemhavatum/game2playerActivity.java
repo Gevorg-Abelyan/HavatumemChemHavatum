@@ -574,152 +574,801 @@ public class game2playerActivity extends AppCompatActivity {
                     }
                 }
                 if (player1card2chosen == true) {
-                    cardplaced2.setText(player1card2.getText());
-                    player1cards2.setVisibility(View.INVISIBLE);
+                    if(cardsaid1.getText() == "" && cardplaced1.getText() == ""){
+                        cardplaced1.setText(player1card2.getText());
+                        player1cards2.setVisibility(View.INVISIBLE);
+                    }
+                    else{
+                        cardplaced2.setText(player1card2.getText());
+                        player1cards2.setVisibility(View.INVISIBLE);
+                    }
+
                     if (isvalet == true) {
-                        cardsaid2.setText("J");
+                        if(cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("J");
+                        }
+                        else{
+                            cardsaid2.setText("J");
+                        }
                     }
                     if (isdama == true) {
-                        cardsaid2.setText("Q");
+                        if(cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("Q");
+                        }
+                        else{
+                            cardsaid2.setText("Q");
+                        }
                     }
                     if (iskarol == true) {
-                        cardsaid2.setText("K");
+                        if(cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("K");
+                        }
+                        else{
+                            cardsaid2.setText("K");
+                        }
                     }
                     if (istuz == true) {
-                        cardsaid2.setText("A");
+                        if(cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("A");
+                        }
+                        else{
+                            cardsaid2.setText("A");
+                        }
                     }
                     if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
                         Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
                     }
                 }
                 if (player1card3chosen == true) {
-                    cardplaced3.setText(player1card3.getText());
-                    player1cards3.setVisibility(View.INVISIBLE);
+                    if(cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                        cardplaced1.setText(player1card3.getText());
+                        player1cards3.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                        cardplaced2.setText(player1card3.getText());
+                        player1cards3.setVisibility(View.INVISIBLE);
+                    }
+                    else{
+                        cardplaced3.setText(player1card3.getText());
+                        player1cards3.setVisibility(View.INVISIBLE);
+                    }
+
                     if (isvalet == true) {
-                        cardsaid3.setText("J");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("J");
+                        } else {
+                            cardsaid3.setText("J");
+                        }
                     }
                     if (isdama == true) {
-                        cardsaid3.setText("Q");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("Q");
+                        } else {
+                            cardsaid3.setText("Q");
+                        }
                     }
                     if (iskarol == true) {
-                        cardsaid3.setText("K");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("K");
+                        } else {
+                            cardsaid3.setText("K");
+                        }
                     }
                     if (istuz == true) {
-                        cardsaid3.setText("A");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("A");
+                        } else {
+                            cardsaid3.setText("A");
+                        }
                     }
                     if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
                         Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
                     }
                 }
                 if (player1card4chosen == true) {
-                    cardplaced4.setText(player1card4.getText());
-                    player1cards4.setVisibility(View.INVISIBLE);
+                    if(cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                        cardplaced1.setText(player1card4.getText());
+                        player1cards4.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                        cardplaced2.setText(player1card4.getText());
+                        player1cards4.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                        cardplaced3.setText(player1card4.getText());
+                        player1cards4.setVisibility(View.INVISIBLE);
+                    }
+                    else{
+                        cardplaced4.setText(player1card4.getText());
+                        player1cards4.setVisibility(View.INVISIBLE);
+                    }
                     if (isvalet == true) {
-                        cardsaid4.setText("J");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("J");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("J");
+                        }else {
+                            cardsaid4.setText("J");
+                        }
                     }
                     if (isdama == true) {
-                        cardsaid4.setText("Q");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("Q");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("Q");
+                        }else {
+                            cardsaid4.setText("Q");
+                        }
                     }
                     if (iskarol == true) {
-                        cardsaid4.setText("K");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("K");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("K");
+                        }else {
+                            cardsaid4.setText("K");
+                        }
                     }
                     if (istuz == true) {
-                        cardsaid4.setText("A");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("A");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("A");
+                        }else {
+                            cardsaid4.setText("A");
+                        }
                     }
                     if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
                         Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
                     }
                 }
                 if (player1card5chosen == true) {
-                    cardplaced5.setText(player1card5.getText());
-                    player1cards5.setVisibility(View.INVISIBLE);
+                    if(cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                        cardplaced1.setText(player1card5.getText());
+                        player1cards5.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                        cardplaced2.setText(player1card5.getText());
+                        player1cards5.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                        cardplaced3.setText(player1card5.getText());
+                        player1cards5.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                        cardplaced4.setText(player1card5.getText());
+                        player1cards5.setVisibility(View.INVISIBLE);
+                    }
+                    else{
+                        cardplaced5.setText(player1card5.getText());
+                        player1cards5.setVisibility(View.INVISIBLE);
+                    }
                     if (isvalet == true) {
-                        cardsaid5.setText("J");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("J");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("J");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("J");
+                        }else {
+                            cardsaid5.setText("J");
+                        }
                     }
                     if (isdama == true) {
-                        cardsaid5.setText("Q");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("Q");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("Q");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("Q");
+                        }else {
+                            cardsaid5.setText("Q");
+                        }
                     }
                     if (iskarol == true) {
-                        cardsaid5.setText("K");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("K");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("K");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("K");
+                        }else {
+                            cardsaid5.setText("K");
+                        }
                     }
                     if (istuz == true) {
-                        cardsaid5.setText("A");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("A");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("A");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("A");
+                        }else {
+                            cardsaid5.setText("A");
+                        }
                     }
                     if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
                         Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
                     }
                 }
                 if (player1card6chosen == true) {
-                    cardplaced6.setText(player1card6.getText());
-                    player1cards6.setVisibility(View.INVISIBLE);
+                    if(cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                        cardplaced1.setText(player1card6.getText());
+                        player1cards6.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                        cardplaced2.setText(player1card6.getText());
+                        player1cards6.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                        cardplaced3.setText(player1card6.getText());
+                        player1cards6.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                        cardplaced4.setText(player1card6.getText());
+                        player1cards6.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                        cardplaced5.setText(player1card6.getText());
+                        player1cards6.setVisibility(View.INVISIBLE);
+                    }
+                    else{
+                        cardplaced6.setText(player1card6.getText());
+                        player1cards6.setVisibility(View.INVISIBLE);
+                    }
                     if (isvalet == true) {
-                        cardsaid6.setText("J");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("J");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("J");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("J");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("J");
+                        }else {
+                            cardsaid6.setText("J");
+                        }
                     }
                     if (isdama == true) {
-                        cardsaid6.setText("Q");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("Q");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("Q");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("Q");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("Q");
+                        }else {
+                            cardsaid6.setText("Q");
+                        }
                     }
                     if (iskarol == true) {
-                        cardsaid6.setText("K");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("K");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("K");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("K");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("K");
+                        }else {
+                            cardsaid6.setText("K");
+                        }
                     }
                     if (istuz == true) {
-                        cardsaid6.setText("A");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("A");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("A");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("A");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("A");
+                        }else {
+                            cardsaid6.setText("A");
+                        }
                     }
                     if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
                         Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
                     }
                 }
                 if (player1card7chosen == true) {
-                    cardplaced7.setText(player1card7.getText());
-                    player1cards7.setVisibility(View.INVISIBLE);
+                    if(cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                        cardplaced1.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                        cardplaced2.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                        cardplaced3.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                        cardplaced4.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                        cardplaced5.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == ""  && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                        cardplaced6.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    else{
+                        cardplaced7.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
                     if (isvalet == true) {
-                        cardsaid7.setText("J");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("J");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("J");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("J");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("J");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == ""  && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("J");
+                        }else {
+                            cardsaid7.setText("J");
+                        }
                     }
                     if (isdama == true) {
-                        cardsaid7.setText("Q");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("Q");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("Q");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("Q");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("Q");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == ""  && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("Q");
+                        }else {
+                            cardsaid7.setText("Q");
+                        }
                     }
                     if (iskarol == true) {
-                        cardsaid7.setText("K");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("K");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("K");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("K");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("K");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == ""  && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("K");
+                        }else {
+                            cardsaid7.setText("K");
+                        }
                     }
                     if (istuz == true) {
-                        cardsaid7.setText("A");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("A");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("A");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("A");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("A");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == ""  && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("A");
+                        }else {
+                            cardsaid7.setText("A");
+                        }
+                    }
+                    if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
+                        Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
+                    }
+                }
+                if (player1card7chosen == true) {
+                    if(cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                        cardplaced1.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                        cardplaced2.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                        cardplaced3.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                        cardplaced4.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                        cardplaced5.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == ""  && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                        cardplaced6.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    else{
+                        cardplaced7.setText(player1card7.getText());
+                        player1cards7.setVisibility(View.INVISIBLE);
+                    }
+                    if (isvalet == true) {
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("J");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("J");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("J");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("J");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == ""  && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("J");
+                        }else {
+                            cardsaid7.setText("J");
+                        }
+                    }
+                    if (isdama == true) {
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("Q");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("Q");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("Q");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("Q");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == ""  && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("Q");
+                        }else {
+                            cardsaid7.setText("Q");
+                        }
+                    }
+                    if (iskarol == true) {
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("K");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("K");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("K");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("K");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == ""  && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("K");
+                        }else {
+                            cardsaid7.setText("K");
+                        }
+                    }
+                    if (istuz == true) {
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("A");
+                        } else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("A");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("A");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("A");
+                        }
+                        else if(cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == ""  && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("A");
+                        }else {
+                            cardsaid7.setText("A");
+                        }
                     }
                     if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
                         Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
                     }
                 }
                 if (player1card8chosen == true) {
-                    cardplaced8.setText(player1card8.getText());
-                    player1cards8.setVisibility(View.INVISIBLE);
+                    if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                        cardplaced1.setText(player1card8.getText());
+                        player1cards8.setVisibility(View.INVISIBLE);
+                    } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                        cardplaced2.setText(player1card8.getText());
+                        player1cards8.setVisibility(View.INVISIBLE);
+                    } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                        cardplaced3.setText(player1card8.getText());
+                        player1cards8.setVisibility(View.INVISIBLE);
+                    } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                        cardplaced4.setText(player1card8.getText());
+                        player1cards8.setVisibility(View.INVISIBLE);
+                    } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                        cardplaced5.setText(player1card8.getText());
+                        player1cards8.setVisibility(View.INVISIBLE);
+                    } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                        cardplaced6.setText(player1card8.getText());
+                        player1cards8.setVisibility(View.INVISIBLE);
+                    } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "") {
+                        cardplaced7.setText(player1card8.getText());
+                        player1cards8.setVisibility(View.INVISIBLE);
+                    } else {
+                        cardplaced8.setText(player1card8.getText());
+                        player1cards8.setVisibility(View.INVISIBLE);
+                    }
                     if (isvalet == true) {
-                        cardsaid8.setText("J");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "") {
+                            cardsaid7.setText("J");
+                        } else {
+                            cardsaid8.setText("J");
+                        }
                     }
                     if (isdama == true) {
-                        cardsaid8.setText("Q");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "") {
+                            cardsaid7.setText("Q");
+                        } else {
+                            cardsaid8.setText("Q");
+                        }
                     }
                     if (iskarol == true) {
-                        cardsaid8.setText("K");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "") {
+                            cardsaid7.setText("K");
+                        } else {
+                            cardsaid8.setText("K");
+                        }
                     }
                     if (istuz == true) {
-                        cardsaid8.setText("A");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "") {
+                            cardsaid7.setText("A");
+                        } else {
+                            cardsaid8.setText("A");
+                        }
                     }
                     if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
                         Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
                     }
                 }
                 if (player1card9chosen == true) {
-                    cardplaced9.setText(player1card9.getText());
-                    player1cards9.setVisibility(View.INVISIBLE);
+                    if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                        cardplaced1.setText(player1card9.getText());
+                        player1cards9.setVisibility(View.INVISIBLE);
+                    } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                        cardplaced2.setText(player1card9.getText());
+                        player1cards9.setVisibility(View.INVISIBLE);
+                    } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                        cardplaced3.setText(player1card9.getText());
+                        player1cards9.setVisibility(View.INVISIBLE);
+                    } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                        cardplaced4.setText(player1card9.getText());
+                        player1cards9.setVisibility(View.INVISIBLE);
+                    } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                        cardplaced5.setText(player1card9.getText());
+                        player1cards9.setVisibility(View.INVISIBLE);
+                    } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                        cardplaced6.setText(player1card9.getText());
+                        player1cards9.setVisibility(View.INVISIBLE);
+                    } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "") {
+                        cardplaced7.setText(player1card9.getText());
+                        player1cards9.setVisibility(View.INVISIBLE);
+                    }
+                    else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "" && cardsaid8.getText() == "" && cardplaced8.getText() == "") {
+                        cardplaced8.setText(player1card9.getText());
+                        player1cards9.setVisibility(View.INVISIBLE);
+                    }else {
+                        cardplaced9.setText(player1card9.getText());
+                        player1cards9.setVisibility(View.INVISIBLE);
+                    }
                     if (isvalet == true) {
-                        cardsaid9.setText("J");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("J");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "") {
+                            cardsaid7.setText("J");
+                        }
+                        else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "" && cardsaid8.getText() == "" && cardplaced8.getText() == "") {
+                            cardsaid8.setText("J");
+                        }
+                        else {
+                            cardsaid9.setText("J");
+                        }
                     }
                     if (isdama == true) {
-                        cardsaid9.setText("Q");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("Q");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "") {
+                            cardsaid7.setText("Q");
+                        }
+                        else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "" && cardsaid8.getText() == "" && cardplaced8.getText() == "") {
+                            cardsaid8.setText("Q");
+                        }
+                        else {
+                            cardsaid9.setText("Q");
+                        }
                     }
                     if (iskarol == true) {
-                        cardsaid9.setText("K");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("K");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "") {
+                            cardsaid7.setText("K");
+                        }
+                        else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "" && cardsaid8.getText() == "" && cardplaced8.getText() == "") {
+                            cardsaid8.setText("K");
+                        }
+                        else {
+                            cardsaid9.setText("K");
+                        }
                     }
                     if (istuz == true) {
-                        cardsaid9.setText("A");
+                        if (cardsaid1.getText() == "" && cardplaced1.getText() == "") {
+                            cardsaid1.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "") {
+                            cardsaid2.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "") {
+                            cardsaid3.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "") {
+                            cardsaid4.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "") {
+                            cardsaid5.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "") {
+                            cardsaid6.setText("A");
+                        } else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "") {
+                            cardsaid7.setText("A");
+                        }
+                        else if (cardsaid1.getText() == "" && cardplaced1.getText() == "" && cardsaid2.getText() == "" && cardplaced2.getText() == "" && cardsaid3.getText() == "" && cardplaced3.getText() == "" && cardsaid4.getText() == "" && cardplaced4.getText() == "" && cardsaid5.getText() == "" && cardplaced5.getText() == "" && cardsaid6.getText() == "" && cardplaced6.getText() == "" && cardsaid7.getText() == "" && cardplaced7.getText() == "" && cardsaid8.getText() == "" && cardplaced8.getText() == "") {
+                            cardsaid8.setText("J");
+                        }
+                        else {
+                            cardsaid9.setText("J");
+                        }
                     }
                     if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
                         Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
@@ -789,114 +1438,6 @@ public class game2playerActivity extends AppCompatActivity {
                 }
 
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         });
 
         tuz.setOnClickListener(new View.OnClickListener() {
