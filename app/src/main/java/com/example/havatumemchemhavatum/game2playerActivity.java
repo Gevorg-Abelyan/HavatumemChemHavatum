@@ -554,25 +554,178 @@ public class game2playerActivity extends AppCompatActivity {
         drop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (player1card1chosen == true){
+                if (player1card1chosen == true) {
                     cardplaced1.setText(player1card1.getText());
                     player1cards1.setVisibility(View.INVISIBLE);
-                    if(isvalet == true){
+                    if (isvalet == true) {
                         cardsaid1.setText("J");
                     }
-                    if(isdama == true){
+                    if (isdama == true) {
                         cardsaid1.setText("Q");
                     }
-                    if(iskarol == true){
+                    if (iskarol == true) {
                         cardsaid1.setText("K");
                     }
-                    if(istuz == true){
+                    if (istuz == true) {
                         cardsaid1.setText("A");
                     }
-                    if(isvalet != true && isdama != true && iskarol != true && istuz != true){
+                    if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
                         Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
                     }
                 }
+                if (player1card2chosen == true) {
+                    cardplaced2.setText(player1card2.getText());
+                    player1cards2.setVisibility(View.INVISIBLE);
+                    if (isvalet == true) {
+                        cardsaid2.setText("J");
+                    }
+                    if (isdama == true) {
+                        cardsaid2.setText("Q");
+                    }
+                    if (iskarol == true) {
+                        cardsaid2.setText("K");
+                    }
+                    if (istuz == true) {
+                        cardsaid2.setText("A");
+                    }
+                    if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
+                        Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
+                    }
+                }
+                if (player1card3chosen == true) {
+                    cardplaced3.setText(player1card3.getText());
+                    player1cards3.setVisibility(View.INVISIBLE);
+                    if (isvalet == true) {
+                        cardsaid3.setText("J");
+                    }
+                    if (isdama == true) {
+                        cardsaid3.setText("Q");
+                    }
+                    if (iskarol == true) {
+                        cardsaid3.setText("K");
+                    }
+                    if (istuz == true) {
+                        cardsaid3.setText("A");
+                    }
+                    if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
+                        Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
+                    }
+                }
+                if (player1card4chosen == true) {
+                    cardplaced4.setText(player1card4.getText());
+                    player1cards4.setVisibility(View.INVISIBLE);
+                    if (isvalet == true) {
+                        cardsaid4.setText("J");
+                    }
+                    if (isdama == true) {
+                        cardsaid4.setText("Q");
+                    }
+                    if (iskarol == true) {
+                        cardsaid4.setText("K");
+                    }
+                    if (istuz == true) {
+                        cardsaid4.setText("A");
+                    }
+                    if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
+                        Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
+                    }
+                }
+                if (player1card5chosen == true) {
+                    cardplaced5.setText(player1card5.getText());
+                    player1cards5.setVisibility(View.INVISIBLE);
+                    if (isvalet == true) {
+                        cardsaid5.setText("J");
+                    }
+                    if (isdama == true) {
+                        cardsaid5.setText("Q");
+                    }
+                    if (iskarol == true) {
+                        cardsaid5.setText("K");
+                    }
+                    if (istuz == true) {
+                        cardsaid5.setText("A");
+                    }
+                    if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
+                        Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
+                    }
+                }
+                if (player1card6chosen == true) {
+                    cardplaced6.setText(player1card6.getText());
+                    player1cards6.setVisibility(View.INVISIBLE);
+                    if (isvalet == true) {
+                        cardsaid6.setText("J");
+                    }
+                    if (isdama == true) {
+                        cardsaid6.setText("Q");
+                    }
+                    if (iskarol == true) {
+                        cardsaid6.setText("K");
+                    }
+                    if (istuz == true) {
+                        cardsaid6.setText("A");
+                    }
+                    if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
+                        Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
+                    }
+                }
+                if (player1card7chosen == true) {
+                    cardplaced7.setText(player1card7.getText());
+                    player1cards7.setVisibility(View.INVISIBLE);
+                    if (isvalet == true) {
+                        cardsaid7.setText("J");
+                    }
+                    if (isdama == true) {
+                        cardsaid7.setText("Q");
+                    }
+                    if (iskarol == true) {
+                        cardsaid7.setText("K");
+                    }
+                    if (istuz == true) {
+                        cardsaid7.setText("A");
+                    }
+                    if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
+                        Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
+                    }
+                }
+                if (player1card8chosen == true) {
+                    cardplaced8.setText(player1card8.getText());
+                    player1cards8.setVisibility(View.INVISIBLE);
+                    if (isvalet == true) {
+                        cardsaid8.setText("J");
+                    }
+                    if (isdama == true) {
+                        cardsaid8.setText("Q");
+                    }
+                    if (iskarol == true) {
+                        cardsaid8.setText("K");
+                    }
+                    if (istuz == true) {
+                        cardsaid8.setText("A");
+                    }
+                    if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
+                        Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
+                    }
+                }
+                if (player1card9chosen == true) {
+                    cardplaced9.setText(player1card9.getText());
+                    player1cards9.setVisibility(View.INVISIBLE);
+                    if (isvalet == true) {
+                        cardsaid9.setText("J");
+                    }
+                    if (isdama == true) {
+                        cardsaid9.setText("Q");
+                    }
+                    if (iskarol == true) {
+                        cardsaid9.setText("K");
+                    }
+                    if (istuz == true) {
+                        cardsaid9.setText("A");
+                    }
+                    if (isvalet != true && isdama != true && iskarol != true && istuz != true) {
+                        Toast.makeText(game2playerActivity.this, "Pick at least one mast", Toast.LENGTH_SHORT).show();
+                    }
+                }
+
             }
         });
         valet.setOnClickListener(new View.OnClickListener() {
@@ -636,6 +789,114 @@ public class game2playerActivity extends AppCompatActivity {
                 }
 
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         });
 
         tuz.setOnClickListener(new View.OnClickListener() {
